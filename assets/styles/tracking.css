@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    /*background-image: url(tracking-background.png); BACKGROUND NOT WORKING :(((((*/ 
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    color: #332121;
+}
+
+.tracking-background{
+    z-index: -10;
+    position: absolute;
+    top: -20px;
+    margin: -70px 0px 0px 0px;;
+}
+
+.progress{
+    margin: 35px auto;
+    padding-right: 50px;
+}
+
+.progress img{
+    width: 100px;
+    margin: 30px auto;
+}
+
+ul{
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    width: 200px;
+    position: relative;
+}
+
+ul li .fa{
+    background: #ccc;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+ul li .fas{
+    background: #ccc;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+ul li .fas::after{
+    content: '';
+    background: #ccc;
+    height: 5px;
+    width: 300px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 170px;
+    z-index: -1;
+}
+
+ul li .fa::after{
+    content: '';
+    background: #ccc;
+    height: 5px;
+    width: 300px; /*input 300px or 200px to get diff effects*/
+    display: block;
+    position: absolute;
+    left: 0px; /*to adjust the line of IN TRANSIT, input 100px or 0px to get diff effects*/
+    top: 170px;
+    z-index: -1;
+}
+
+ul li:nth-child(3) .fas{
+    background: #60aa97;
+}
+
+ul li:nth-child(3) .fas::after{
+    background: #60aa97;
+    width: 250px; /*input 250px or 350px to get diff effects*/
+    left: 0px; /*to adjust the line of PAYMENT RECEIVED, *input 100px or 0px to get diff effects*/
+}
+
+ul li:nth-child(1) .fas,
+ul li:nth-child(2) .fas
+{
+    background: #148e14;  
+}
+
+ul li:nth-child(1) .fas::after,
+ul li:nth-child(2) .fas::after
+{
+    background: #148e14;  
+}
+
+ul li:first-child .fas::after{
+    width: 105px;
+    left: 100px;
+}
+
+ul li:last-child .fas::after{
+    width: 105px;
+}
+
+ul li:last-child .fa::after{
+    width: 0px;
+    left: 100px;
+}

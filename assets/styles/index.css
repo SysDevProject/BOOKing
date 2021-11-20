@@ -1,0 +1,65 @@
+/* BODY OF THE WEBSITE */
+body {
+    background-image: url('/assets/images/bookbackground.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Acme', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.leftContainer {
+    float: left;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+img {
+    margin-left: -24%;
+    margin-bottom: -5%;
+}
+
+#logInButton {
+    width: 50%;
+    height:50px;
+    background-color: #740001;
+    border: 3px solid white;
+    color: #FFFF;
+    font-weight:bold;
+    border-radius: 10px;
+    margin-bottom: 500px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    outline: none;
+}
+
+#signUpButton {
+    width: 50%;
+    height:50px;
+    background-color: #740001;
+    border: 3px solid white;
+    color: #FFFF;
+    font-weight:bold;
+    border-radius: 10px;
+    margin-bottom: 500px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    outline: none;
+}
+
+.rightContainer {
+    width: 50%;
+    float: right;
+}

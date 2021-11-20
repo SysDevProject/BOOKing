@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    background: #800000;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: absolute;
+    width: 694px;
+    height: 450px;
+    margin: auto;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.TopLeft{
+    background: #FFB347;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 694px;
+}
+
+.TopLeft header{
+    font-family: 'Pacifico', sans-serif;
+    color: #ffffff;
+    margin-top: 13px;
+    margin-bottom: -5px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.LeftPortion{
+    position: relative;
+    background: #ffffff;
+    border-radius: 70px;
+    height: 95%;
+    align-items: center;
+    float: left;
+    width: 50%;
+}
+
+.RightPortion {
+    border-radius: 70px;
+    height: 100%;
+    align-items: center;
+    float: right;
+}
+
+.img-fluid{
+    padding-left: 70px;
+    width: 400px;
+    height: 400px;
+}
+
+.BottomPortion {
+    font-family: 'Pacifico', sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.box3{
+    background: #AE0001;
+    margin-top: 565px;
+    padding-top: 1;
+    width: 100vw;
+    height: 8vh;
+    text-align: center;
+
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.box1{ /*Welcome to BOOKing!*/
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    width: 100%;
+    text-align: center;
+}
+.box2 {
+    position:absolute;
+    margin: 0;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.LeftPortion .username{ /*in text only*/
+    font-family: 'Roboto', sans-serif;
+    width: 275px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 11px;
+    padding-left: 25px;
+    margin-top: 40px;
+    margin-left: 15px;
+    border: none;
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.LeftPortion .username:focus{
+    outline: none;
+}
+
+
+.LeftPortion .password{ /*in text only*/
+    font-family: 'Roboto', sans-serif;
+    width: 275px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 11px;
+    padding-left: 25px;
+    margin-top: 15px;
+    margin-left: 15px;
+    border: none;
+    -webkit-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.LeftPortion .button1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 285px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 11px;
+    background: #FFB347;
+    color: #fff;
+    border: none;
+    -webkit-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 10px 41px -11px rgba(0, 0, 0, 0.7);
+}
+
+.LeftPortion .password:focus{
+    outline: none;
+}
+
+.LeftPortion .button1:hover{
+    background: linear-gradient(45deg, #ffc247, #ffbe61);
+}
+
+.Form1{
+    position: relative;
+    /*margin-top: 50px;*/
+}
+
+.Form2{ /*Welcome to BOOKing!*/
+    position: relative;
+    /*margin-top: 50px;*/
+}
+
+.ForgotUP{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    position: center;
+    margin-top: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+.LOGINbutton{
+    position: relative;
+    margin-top: 25px;
+    padding-right: 20px;
+    margin-left: 30px;
+}
+
+.NewtoBOOKING{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: medium;
+    position: center;
+    margin-top: 25px;
+    padding-right: 25px;
+    text-align: center;
+}
+
+form1 i { /*mail icon*/
+    position: relative;
+    font-size: 20px;
+    color: gray;
+    margin: 53.5px 0 0 -40px;
+}
+
+form2 i { /*eye icon*/
+    position: relative;
+    font-size: 20px;
+    color: gray;
+    margin: 27.5px 0 0 -40px;
+}
+
+i .fa-eye{
+    margin-top: 10px;
+    cursor: pointer;
+} 

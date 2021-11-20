@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome to BOOKing!</title>
+   
+    <link rel="stylesheet" href="assets/styles/css/signnn.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="LeftPortion">   
+                <div class="TopLeft">
+                    <div class="box1">
+                        <header>Welcome to BOOKing!</header>
+                    </div>
+                </div>
+                <form1>
+                    <div class="form-group">
+                        <input class="username" type="text" placeholder="Username/Email" id="username" required>
+                        <i class="far fa-envelope"></i>
+                        <!-- <div class="invalid-feedback">Please fill out this field</div> -->
+                    </div>
+                </form1>
+                <form2>
+                    <div class="form-group">
+                        <input class="password" type="password" id="pswrd" placeholder="Password" required>
+                        <i class= "fas fa-eye" onclick="showhide()"></i>
+                    </div>  
+                </form2>
+                <form class="ForgotUP"> 
+                    <p1> Forgot Username or Password?</p1>
+                </form>
+                <form class="LOGINbutton text-center"> 
+                    <input type="submit" class="button1" value="LOG IN AS BUYER">
+                </form>
+                <form class="NewtoBOOKING"> 
+                    <p2> Already a Member? <a href="log-in.html"> Login here.</a></p2>
+                </form>          
+        </div>
+    </div>
+    <div class="BottomPortion"> 
+        <div class="box3">
+            <p>for Bookworms, by Bookworms</p>
+        </div>
+    </div> 
+        <script>
+            function showhide(){
+                var pswrd = document.getElementById('pswrd');
+                var icon = document.querySelector('.fas');
+                    if (pswrd.type === "password") {
+                        pswrd.type = "text";
+                        icon.style.color = "#7f2092";
+                    }
+                    else{
+                    pswrd.type = "password";
+                    icon.style.color = "gray";
+                    }
+            }
+        </script>
+</body>
+</html>

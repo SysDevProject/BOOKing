@@ -1,0 +1,362 @@
+/* BODY OF THE WEBSITE */
+body {
+    background-color: white;
+    font-family: 'Baloo Tammudu 2';
+    margin:0;
+    padding:0;
+}
+
+/* NAVIGATION BAR **/
+.navBar {
+    background-color: #740001;
+    color: #EEBA30;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navBar-list {
+    list-style-type: none;
+    display: inline;
+}
+.navBar-logo {
+    float: left;
+    color: #EEBA30;
+    margin-left: 15px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#notification-button {
+    background-color: transparent;
+    color: #EEBA30;
+    border: none;
+    outline: none;
+}
+.navBar-items-1 {
+    color: #EEBA30;
+    float: right;
+    margin-top: 18px;
+    margin-right: 15px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.navBar-items-2 {
+    color: #EEBA30;
+    float: right;
+    margin-right: 10px;
+    margin-top: 21px;
+    font-size: 15px;
+}
+.search-category{
+    display: inline-flex;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+.navBar-Search {
+    width: 90%; 
+}
+.navBar-searchBar {
+    width: 100%;
+    height: 30px;  
+    font-size: 20px;
+}
+.dropdown{
+    padding-left: 10px;
+    padding-right: 20px;
+    text-align: center;
+}
+/* Dropdown content (hidden by default) */
+.dropbtn {
+    background-color:transparent;
+    color: #EEBA30;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+} 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+} 
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* EMPTY SPACE BEHIND NAVBAR */
+.behindnavBar {
+    height: 90px;
+}
+
+/* PROMOTIONS CAROUSEL */
+.promotions {
+    height: 250px;
+    left: 0;
+}
+
+/* NAVIGATION BUTTONS */
+.navButton {
+    width: 100%;
+    height: 90px;
+}
+.navButton-list {
+    list-style-type: none;
+    display: inline;
+}
+.navButton-item {
+    float: left;
+    border: 5px solid #740001;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 8%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+/* WHAT'S HOT? */
+.whatsHot {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #740001;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* BOOKSALE */
+.bookSale {
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #740001;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* CHECK THIS OUT */
+#checkThisOut {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #740001;
+    font-weight: bold;
+    font-size: 30px;
+    float: left;
+}
+
+/* SEE ALL BUTTON */
+#seeAll {
+    float: right;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    border-width: 5px;
+    border-color: #740001;
+    color: #740001;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    z-index: 2;
+}
+
+/* BOOK HOVER */
+.top {
+    transition: .5s ease;
+    opacity: 0;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.carousel-item:hover .img-fluid {
+    opacity: 0.5;
+}
+.carousel-item:hover .middle {
+    opacity: 1;
+}
+.carousel-item:hover .top {
+    opacity: 1;
+}
+.text {
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 16px 32px;
+}
+.img-fluid {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+/* BOOK CAROUSEL */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+/* FOOTNOTE */
+.footNote {
+    background-color: #740001;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+#footNote-letter {
+    color: #D3A625;
+    font-size: 15px;
+    padding: 15px;
+}
